@@ -42,7 +42,7 @@ public void setAbonent(String adress){
     this.adress = adress;
 }
 public void setTotalCallTime(double TotalCallTime){
-    this.TotalCallTimeotalCallTime = TotalCallTime;
+    this.TotalCallTime = TotalCallTime;
 }
 public void setCreditCardNumber(String CreditCardNumber){
     this.creditCardNumber = CreditCardNumber;
@@ -50,4 +50,32 @@ public void setCreditCardNumber(String CreditCardNumber){
 public void setDebt(double debt){
     this.debt = debt;
 }
+public String getId(){
+    return id;
+}
+public String getSurname(){
+    return surname;
+}
+public String getName(){
+    return name;
+}
+public String getPatronym(){
+    return patronym;
+}
+public String getAdress(){
+    return adress;
+}
+public double getTotalCallTime(){
+    return TotalCallTime;
+}
+public String getCreditCardNumber(){
+    return creditCardNumber;
+}
+public double getDebt(){
+    return debt;
+}
+
+
+
+
         }
