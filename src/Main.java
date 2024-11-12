@@ -8,7 +8,7 @@ Class abonent{
     private String patronym;
     private String adress;
     private double TotalCallTime;//время звонка
-private String creditCardNumber;//карта
+private String creditCardNumber;//Номер кредитной карточки
 private double debt;//задолжность
 
 public abonent() String id, String surname, String name, String patronym, String adress,
@@ -24,10 +24,22 @@ public abonent() String id, String surname, String name, String patronym, String
 }
 public abonent(String id, String surname, String name, String patronym, String adress,
                double TotalCallTime, String creditCardNumber, double debt){
-    this(surname, name, patronym,adress, 0, 0)
+    this(surname, name, patronym,adress, 0, 0)}
+
+public  void setrId(String id){
+    this.id = id;
 }
 public void setSurname(String surname){
+    this.surname = surname;
 }
-
+public  void setName(String name){
+    this.name = name;
+}
+public void setPatronym(String patronym){
+    this.patronym = patronym;
+}
+public void setAbonent(String adress){
+    this.adress = adress;
+}
 
         }
