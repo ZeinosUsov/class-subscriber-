@@ -18,7 +18,7 @@ public abonent() String id, String surname, String name, String patronym, String
     this.name = name;
     this.patronym = patronym;
     this.adress = adress;
-    this.TotalCallTime = TotallCalltime;
+    this.TotalCalTime = TotalCalltime;
     this.creditCardNumber = creditCardNumber;
     this.debt = debt;
 }
@@ -41,5 +41,13 @@ public void setPatronym(String patronym){
 public void setAbonent(String adress){
     this.adress = adress;
 }
-
+public void setTotalCallTime(double TotalCallTime){
+    this.TotalCallTimeotalCallTime = TotalCallTime;
+}
+public void setCreditCardNumber(String CreditCardNumber){
+    this.creditCardNumber = CreditCardNumber;
+}
+public void setDebt(double debt){
+    this.debt = debt;
+}
         }
