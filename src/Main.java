@@ -24,7 +24,7 @@ public abonent() String id, String surname, String name, String patronym, String
 }
 public abonent(String id, String surname, String name, String patronym, String adress,
                double TotalCallTime, String creditCardNumber, double debt){
-    this(surname, name, patronym,adress, 0, 0)}
+    this("N/A", surname, name, patronym,adress, 0, "N/A",  0)}
 
 public  void setrId(String id){
     this.id = id;
@@ -74,8 +74,39 @@ public String getCreditCardNumber(){
 public double getDebt(){
     return debt;
 }
+public void displayinfo(){
+    System.out.println("ID:" + id);
+    System.out.println("фамилия:" + surname);
+    System.out.println("имя:" + name);
+    System.out.println("адрес:" + adress);
+    System.out.println("общее время разговора:" + TotalCallTime +"часов");
+    System.out.println("номер кредитной карточки:" + creditCardNumber);        
+    System.out.println("Задолжность:" + debt);
+ System.out.println();
+    }
+}
 
+public class main{
+    public static void main(String[] args){
+        abonent 
+            List<abonent>abonents=new
+            ArrayList<>();
+        abonent.add(new Abonent ("1", "Иванов","Иван","Иванович", "ул.Дмитриевская,1", 5.2, "1111-2222-3333-4444-5555", 100.00));
 
+double thresholdTime = 4.0; 
+        System.out.println(thresholTime);
 
-
+        for(Abonent abonent : abonents){
+            if (abonent.getTotalCallTime()>thresholdTime){
+                abonent.displayinfo();
+            }
         }
+    }
+}
+
+
+
+
+
+        
+
