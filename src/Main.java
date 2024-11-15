@@ -112,7 +112,7 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
 public class Main { // Исправлено: имя класса с большой буквы
     public static void main(String[] args) {
         List<Abonent> abonents = new ArrayList<>(); // Исправлено: инициализация списка
-        abonents.add(new Abonent("1", "Иванов", "Иван", "Иванович", "ул. Дмитриевская, 1", 5.2, "1111-2222-3333-4444", 100.00));
+        abonents.add(new Abonent("1", "Иванов", "Иван", "Иванович", "ул. Дмитриевская, 12", 5.2, "1111-2222-3333-4444", 100.00));
 
         double thresholdTime = 4.0; // Исправлено: правильное название переменной
         System.out.println("Порог времени: " + thresholdTime); // Исправлено: добавлено описание
