@@ -2,17 +2,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Abonent { // Исправлено: "Class" на "class", имя класса с большой буквы
+class Abonent { 
     private String id;
     private String surname;
     private String name;
     private String patronym;
-    private String address; // Исправлено: "adress" на "address"
-    private double totalCallTime; // Исправлено: правильный стиль написания переменных
+    private String address; 
+    private double totalCallTime; 
     private String creditCardNumber;
     private double debt;
 
-    // Конструктор
+   
     public Abonent(String id, String surname, String name, String patronym, String address,
                    double totalCallTime, String creditCardNumber, double debt) {
         this.id = id;
@@ -24,13 +24,11 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
         this.creditCardNumber = creditCardNumber;
         this.debt = debt;
     }
-
-    // Конструктор по умолчанию
+    
     public Abonent() {
         this("N/A", "N/A", "N/A", "N/A", "N/A", 0, "N/A", 0);
     }
-
-    // Сеттеры
+    
     public void setId(String id) {
         this.id = id;
     }
@@ -47,7 +45,7 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
         this.patronym = patronym;
     }
 
-    public void setAddress(String address) { // Исправлено: название метода
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -55,15 +53,14 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
         this.totalCallTime = totalCallTime;
     }
 
-    public void setCreditCardNumber(String creditCardNumber) { // Исправлено: название параметра
+    public void setCreditCardNumber(String creditCardNumber) { 
         this.creditCardNumber = creditCardNumber;
     }
 
     public void setDebt(double debt) {
         this.debt = debt;
     }
-
-    // Геттеры
+    
     public String getId() {
         return id;
     }
@@ -80,7 +77,7 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
         return patronym;
     }
 
-    public String getAddress() { // Исправлено: название метода
+    public String getAddress() { 
         return address;
     }
 
@@ -96,11 +93,11 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
         return debt;
     }
 
-    public void displayInfo() { // Исправлено: название метода
+    public void displayInfo() {
         System.out.println("ID: " + id);
         System.out.println("Фамилия: " + surname);
         System.out.println("Имя: " + name);
-        System.out.println("Отчество: " + patronym); // Пример добавления отчества для полноты
+        System.out.println("Отчество: " + patronym); 
         System.out.println("Адрес: " + address);
         System.out.println("Общее время разговоров: " + totalCallTime + " часа");
         System.out.println("Номер кредитной карточки: " + creditCardNumber);
@@ -109,22 +106,21 @@ class Abonent { // Исправлено: "Class" на "class", имя класс
     }
 }
 
-public class Main { // Исправлено: имя класса с большой буквы
+public class Main { 
     public static void main(String[] args) {
-        List<Abonent> abonents = new ArrayList<>(); // Исправлено: инициализация списка
+        List<Abonent> abonents = new ArrayList<>(); 
         abonents.add(new Abonent("1", "Иванов", "Иван", "Иванович", "ул. Дмитриевская, 12", 5.2, "1111-2222-3333-4444", 100.00));
 
-        double thresholdTime = 4.0; // Исправлено: правильное название переменной
-        System.out.println("Порог времени: " + thresholdTime); // Исправлено: добавлено описание
+        double thresholdTime = 4.0; 
+        System.out.println("Порог времени: " + thresholdTime); 
 
         for (Abonent abonent : abonents) {
             if (abonent.getTotalCallTime() > thresholdTime) {
-                abonent.displayInfo(); // Исправлено: правильное название метода
+                abonent.displayInfo(); 
             }
         }
     }
 }
-
 
 
 
