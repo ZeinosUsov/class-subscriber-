@@ -1,18 +1,17 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
-class Abonent { 
+class Abonent {
     private String id;
     private String surname;
     private String name;
     private String patronym;
-    private String address; 
-    private double totalCallTime; 
+    private String address;
+    private double totalCallTime;
     private String creditCardNumber;
     private double debt;
 
-   
+
     public Abonent(String id, String surname, String name, String patronym, String address,
                    double totalCallTime, String creditCardNumber, double debt) {
         this.id = id;
@@ -24,11 +23,11 @@ class Abonent {
         this.creditCardNumber = creditCardNumber;
         this.debt = debt;
     }
-    
+
     public Abonent() {
         this("N/A", "N/A", "N/A", "N/A", "N/A", 0, "N/A", 0);
     }
-    
+
     public void setId(String id) {
         this.id = id;
     }
@@ -53,14 +52,14 @@ class Abonent {
         this.totalCallTime = totalCallTime;
     }
 
-    public void setCreditCardNumber(String creditCardNumber) { 
+    public void setCreditCardNumber(String creditCardNumber) {
         this.creditCardNumber = creditCardNumber;
     }
 
     public void setDebt(double debt) {
         this.debt = debt;
     }
-    
+
     public String getId() {
         return id;
     }
@@ -77,7 +76,7 @@ class Abonent {
         return patronym;
     }
 
-    public String getAddress() { 
+    public String getAddress() {
         return address;
     }
 
@@ -97,7 +96,7 @@ class Abonent {
         System.out.println("ID: " + id);
         System.out.println("Фамилия: " + surname);
         System.out.println("Имя: " + name);
-        System.out.println("Отчество: " + patronym); 
+        System.out.println("Отчество: " + patronym);
         System.out.println("Адрес: " + address);
         System.out.println("Общее время разговоров: " + totalCallTime + " часа");
         System.out.println("Номер кредитной карточки: " + creditCardNumber);
@@ -106,24 +105,21 @@ class Abonent {
     }
 }
 
-public class Main { 
+public class Main {
     public static void main(String[] args) {
-        List<Abonent> abonents = new ArrayList<>(); 
-        abonents.add(new Abonent("1", "Иванов", "Иван", "Иванович", "ул. Дмитриевская, 12", 5.2, "1111-2222-3333-4444", 100.00));
+        List<Abonent> abonents = new ArrayList<>();
+        abonents.add(new Abonent("1", "Иванов", "Иван", "Иванович", "ул. Дмитриевская, 12", 0.3, "1111-2222-3333-4444", 100000));
 
-        double thresholdTime = 4.0; 
-        System.out.println("Порог времени: " + thresholdTime); 
+        double thresholdTime = 0;
+        System.out.println("Порог времени: " + thresholdTime);
 
         for (Abonent abonent : abonents) {
             if (abonent.getTotalCallTime() > thresholdTime) {
-                abonent.displayInfo(); 
+                abonent.displayInfo();
             }
         }
     }
 }
-
-
-
 
         
 
